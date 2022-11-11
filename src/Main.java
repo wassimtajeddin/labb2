@@ -8,29 +8,17 @@ public class Main {
     public static List<Product> products = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
-        label:
         while (true) {
             System.out.println();
             menuChoices();
             int choice = scanner.nextInt();
 
             switch (choice) {
-                case 1:
-                    writer();
-                    break;
-                case 2:
-                    search();
-
-                    break;
-                case 3:
-                    sortMenu();
-                    break;
-                case 4:
-                    System.out.println("Ha det gött!");
-                    break label;
-                default:
-                    System.out.println("Var god välj ett alternativ!");
-                    break;
+                case 1 -> writer();
+                case 2 -> search();
+                case 3 -> sortMenu();
+                case 4 -> System.out.println("Ha det gött!");
+                default -> System.out.println("Var god välj ett alternativ!");
             }
 
         }
