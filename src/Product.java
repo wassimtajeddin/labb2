@@ -1,10 +1,10 @@
 import java.util.Objects;
 
 public class  Product {
- private String category;
- private int barcode;
- private String name;
- private double price;
+ private final String category;
+ private final int barcode;
+ private final String name;
+ private final double price;
 
 
  public Product(String category, int barcode, String name, double price) {
@@ -18,33 +18,21 @@ public class  Product {
   return category;
  }
 
- public void setCategory(String category) {
-  this.category = category;
- }
 
  public int getBarcode() {
   return barcode;
  }
 
- public void setBarcode(int barcode) {
-  this.barcode = barcode;
- }
 
  public String getName() {
   return name;
  }
 
- public void setName(String name) {
-  this.name = name;
- }
 
  public double getPrice() {
   return price;
  }
 
- public void setPrice(int price) {
-  this.price = price;
- }
 
  @Override
  public boolean equals(Object o) {
